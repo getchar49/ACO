@@ -169,7 +169,7 @@ void ACOCore::ACO() {
 */
 void ACOCore::SampleSolutionQuality() {
 	m_sEndTime = std::chrono::high_resolution_clock::now();
-	m_lfRunTime = (m_sEndTime - m_sBeginTime).count();
+	m_lfRunTime = std::chrono::duration_cast<std::chrono::seconds>(m_sEndTime - m_sBeginTime).count();
 	//clock_gettime(CLOCK_PROCESS_CPUTIME_ID,&m_sEndTime);
 	//m_lfRunTime = ComputeRunTime(m_sBeginTime,m_sEndTime);
 	if( m_wriResultsWriter.CurrSamplingTime() < m_lfRunTime){ //&& m_lfRunTime <= m_wriResultsWriter.LastSamplingTime()){

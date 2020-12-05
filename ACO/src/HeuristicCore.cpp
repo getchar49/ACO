@@ -151,7 +151,7 @@ void HeuristicCore::VariableNeighborhoodDescent() {
 	//clock_gettime(CLOCK_PROCESS_CPUTIME_ID,&sEndTime);
 	//m_fRunTime = ComputeRunTime(sBeginTime,sEndTime);
 	sEndTime = std::chrono::high_resolution_clock::now();
-	m_fRunTime = (sEndTime - sBeginTime).count();
+	m_fRunTime = std::chrono::duration_cast<std::chrono::seconds>(sEndTime - sBeginTime).count();
 
 	std::cout << "Solution found in " << m_fRunTime << " s" << std::endl;
 	std::cout << m_cCurrentSolution;
