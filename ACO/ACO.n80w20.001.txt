@@ -1,0 +1,2 @@
+Seed	CV	CpuTime	PRPD
+12037	73	5.11454e+07	-99.2698
