@@ -322,7 +322,8 @@ void ACOCore::ConstructSolutionAnt(unsigned int ant_index) {
 
 	/*2. Random pick the first city*/
 	do{
-		chosenCity = (float(rand())/RAND_MAX)*m_unCities;
+		//chosenCity = (float(rand())/RAND_MAX)*m_unCities;
+		chosenCity = rand() % m_unCities;
 	}while(m_vecAnts[ant_index].IsVisited(chosenCity));
 	constructedTour.push_back(chosenCity);
 	m_vecAnts[ant_index].SetVisitedCity(chosenCity);
@@ -347,7 +348,7 @@ void ACOCore::ConstructSolutionAnt(unsigned int ant_index) {
       (SIDE)EFFECTS:  None
 */
 unsigned int ACOCore::RouletteWheelSelection(unsigned int ant_index,unsigned int step) {
-	//double rouletteWheel[m_unCities];
+	//double rouletteWheel[81];
 	double* rouletteWheel = new double[m_unCities];
 	double rouletteWheelSum = 0.0f;
 	double drawnNumber = 0.0f;
