@@ -349,7 +349,9 @@ void ACOCore::ConstructSolutionAnt(unsigned int ant_index) {
 */
 unsigned int ACOCore::RouletteWheelSelection(unsigned int ant_index,unsigned int step) {
 	//double rouletteWheel[81];
-	double* rouletteWheel = new double[m_unCities];
+	//double* rouletteWheel = new double[m_unCities];
+	std::vector<double> rouletteWheel;
+	rouletteWheel.resize(m_unCities);
 	double rouletteWheelSum = 0.0f;
 	double drawnNumber = 0.0f;
 	unsigned int previouslyVisitedCity = m_vecAnts[ant_index].GetAntSolution().GetTour().at(step-1);
@@ -379,7 +381,8 @@ unsigned int ACOCore::RouletteWheelSelection(unsigned int ant_index,unsigned int
 			return i;
 		}
 	}
-	delete[] rouletteWheel;
+	rouletteWheel.clear();
+	//delete[] rouletteWheel;
 	return i-1;
 
 }

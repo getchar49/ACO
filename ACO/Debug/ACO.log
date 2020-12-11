@@ -1,1 +1,38 @@
-﻿
+﻿  ACOCore.cpp
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\CommonDefs.h(102,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\ACOCore.cpp(172,97): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  CandidateSolution.cpp
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\CommonDefs.h(102,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  HeuristicCore.cpp
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\CommonDefs.h(102,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\HeuristicCore.cpp(114,44): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\HeuristicCore.cpp(154,92): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\HeuristicCore.cpp(492,29): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\HeuristicCore.cpp(540,34): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\HeuristicCore.cpp(541,38): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+  InstanceReader.cpp
+  SACore.cpp
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\CommonDefs.h(102,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\SACore.cpp(152,16): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\SACore.cpp(158,6): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+  TSPTW-ACO.cpp
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\TSPTW-ACO.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\CommonDefs.h(102,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\TSPTW-ACO.cpp(325,41): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\TSPTW-ACO.cpp(80,6): warning C4101: 'c': unreferenced local variable
+  Writer.cpp
+C:\Users\Admin\Documents\GitHub\ACO\ACO\src\CommonDefs.h(102,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  ACO.vcxproj -> C:\Users\Admin\Documents\GitHub\ACO\Debug\ACO.exe
